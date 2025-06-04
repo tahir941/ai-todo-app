@@ -1,0 +1,24 @@
+/* src/components/Tasks.css */
+.task-text {
+  word-wrap: break-word;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+.card {
+  border-radius: 1rem;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+input:focus,
+button:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 576px) {
+  .task-text {
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,41 @@
+# Node modules
+client-new/node_modules/
+server/node_modules/
+
+# Build output from React
+client-new/build/
+
+# Build output (if you copy React build into server/public or similar)
+server/public/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+client-new/.env
+server/.env
+.env
+
+# Editor/IDE folders
+.vscode/
+.idea/
+
+# Dependency lock files (optional – ignore only if you're not locking versions)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Coverage reports (from testing)
+coverage/
+
+# Static/upload folders (if used)
+uploads/
+public/static/
