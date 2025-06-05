@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
   'auth/loginUser',
   async ({ email, password }, thunkAPI) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+      const response = await axios.post('https://ai-todo-app-ir47.onrender.com/api/auth/login', { email, password });
       console.log('Login response.data:', response.data);
 
       const { token, user, error } = response.data;
@@ -58,7 +58,7 @@ export const registerUser = createAsyncThunk(
   'auth/registerUser',
   async ({ username, email, password }, thunkAPI) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', {
+      const response = await axios.post('https://ai-todo-app-ir47.onrender.com/api/auth/register', {
         username,
         email,
         password,
