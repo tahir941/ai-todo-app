@@ -8,7 +8,7 @@ export const fetchCategories = createAsyncThunk(
   async (_, { getState, rejectWithValue }) => {
     const { token } = getState().auth;
     try {
-      const response = await axios.get('http://localhost:5000/api/categories', {
+      const response = await axios.get('https://ai-todo-app-ir47.onrender.com/api/categories', {
         headers: { Authorization: `Bearer ${token}` },
       });
       return response.data;
