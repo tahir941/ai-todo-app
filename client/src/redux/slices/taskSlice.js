@@ -11,7 +11,7 @@ const getAuthConfig = (thunkAPI) => {
 };
 
 // Base API URL
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL || 'https://ai-todo-app-ir47.onrender.com';
 
 // Fetch tasks thunk
 export const fetchTasks = createAsyncThunk('tasks/fetchTasks', async (_, thunkAPI) => {
