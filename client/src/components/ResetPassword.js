@@ -11,7 +11,7 @@ const ResetPassword = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/auth/reset-password/${token}`,
+        `https://ai-todo-app-ir47.onrender.com/api/auth/reset-password/${token}`,
         { newPassword }
       );
       setMessage(response.data.message);
