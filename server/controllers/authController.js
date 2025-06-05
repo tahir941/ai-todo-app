@@ -89,7 +89,7 @@ exports.forgotPassword = async (req, res) => {
     }
 
     const resetToken = jwt.sign({ email }, JWT_SECRET, { expiresIn: '15m' });
-    const resetLink = `/reset-password/${resetToken}`;
+    const resetLink = `http://localhost:3000/reset-password/${resetToken}`;
 
     await sendResetEmail(email, resetLink);
 
