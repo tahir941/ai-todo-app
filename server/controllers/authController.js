@@ -89,7 +89,7 @@ exports.forgotPassword = async (req, res) => {
     }
 
     const resetToken = jwt.sign({ email }, JWT_SECRET, { expiresIn: '15m' });
-    const resetLink = `http://localhost:3000/reset-password/${resetToken}`;
+    const resetLink = `https://ai-todo-app-ir47.onrender.com/reset-password/${resetToken}`;
 
     await sendResetEmail(email, resetLink);
 
