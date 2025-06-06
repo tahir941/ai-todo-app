@@ -12,7 +12,7 @@ const app = express();
 
 // ✅ Updated CORS configuration
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://ai-todo-app-ir47.onrender.com',
     credentials: true
 }));
 
