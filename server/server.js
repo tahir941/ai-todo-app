@@ -9,7 +9,11 @@ const tasksRouter = require('./routes/tasks');
 const categoriesRouter = require('./routes/categories');
 const sequelize = require('./config/db'); // Sequelize connection
 
-app.use(cors()); // ✅ Allow same-origin requests by default
+app.use(cors({
+  origin: 'https://ai-todo-app-ir47.onrender.com',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true,
+}));
 
 app.use(express.json());
 
